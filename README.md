@@ -10,4 +10,4 @@ The codes in MPICM_2r are to calculate the volume related to the MPICM for n=2r 
 
 The codes in MUB_4 are to calculate the volume related to a MUB over one of the previous criteria employed in the paper.
 
-The codes in Random_Bases are to randomly select a set of n+1 orthonormal bases in C^n and calculate the volume related to it over one of the previous criteria employed in the paper.
+The codes in RandomBases_n are to randomly select a set of n+1 orthonormal bases in C^n and calculate the volume related to it over one of the previous criteria employed in the paper.
