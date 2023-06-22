@@ -1,4 +1,4 @@
-% n might be changed
+% n might be changed.
 n=10;
 R=cell(1,n+1);
 I=eye(n);
