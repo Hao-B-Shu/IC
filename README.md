@@ -1,6 +1,6 @@
 # IC
 
-This is Matlab codes for the paper: https://arxiv.org/abs/2112.13052
+This is Matlab codes for the paper: https://arxiv.org/abs/2112.13052.
 
 The codes in MPICM_Rank are to discriminate whether the constructed MPICM is IC, where r>=5 and can be changed.
 
