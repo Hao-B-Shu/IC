@@ -1,4 +1,4 @@
-% r>=5 might be changed
+% r>=5 might be changed.
 r=5;
 n=2*r;
 t=exp(1)^(2*pi*i/r);
