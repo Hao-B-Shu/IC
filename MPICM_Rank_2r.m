@@ -1,5 +1,5 @@
-%For n=2r, r in 5:50, calculate the ranks of operators derived by an MPICM
-%Can calculate for a single r>=5 by replacing the first loop by a special r 
+%For n=2r, r in 5:50, calculate the ranks of operators derived by an MPICM.
+%Can calculate for a single r>=5 by replacing the first loop by a special r.
 for r=5:50
 	n=2*r;  t=exp(1)^(2*pi*i/r);  q=exp(1)^(2*pi*i/n);  E=zeros(n);
 	for k=1:n    E(k,k)=1;  end
