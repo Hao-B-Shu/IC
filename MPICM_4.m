@@ -1,10 +1,6 @@
 r=2;
 n=2*r;
-E=zeros(n);
-for k=1:n
-E(k,k)=1;
-end
-
+E=eye(n);
 P0=eye(n);
 
 P1=zeros(n);
@@ -50,8 +46,8 @@ H=[];
 for l=1:n+1
     H=[H,Q{1,l}];
 end
-H=[H,zeros(n*n,1)];
 
-d=eig(H);
-f=d(2:end);
-g=abs(prod(f,'all'))
+[QH,RH]=qr(H);
+H=[H,QH(:,n^2)];
+
+d=abs(det(H))
