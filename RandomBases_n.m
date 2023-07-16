@@ -25,8 +25,9 @@ H=[];
 for l=1:n+1
     H=[H,R{1,l}];
 end
-H=[H,zeros(n*n,1)];
 
-d=eig(H);
-f=d(2:end);
-g=abs(prod(f,'all'))
+[HQ,HR]=qr(H);
+
+H=[H,HQ(:,n^2)];
+
+d=abs(det(H))
