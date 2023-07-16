@@ -194,8 +194,7 @@ for g=1:r
     end
     H=[H,orth(Q)];
 end
-H=[H,zeros(n*n,1)];
+[HQ,HR]=qr(H);
+H=[H,HQ(:,n^2)];
 
-d=eig(H);
-f=d(2:end);
-g=abs(prod(f,'all'))
+d=abs(det(H))
